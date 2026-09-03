@@ -31,7 +31,7 @@
           Routineaufgaben – unkompliziert, zuverlässig und vollständig remote.
         </p>
         <div class="hero-actions">
-          <a class="button primary" href="mailto:nicholas.luc@icloud.com?subject=Anfrage%20Backoffice-Unterst%C3%BCtzung">Unverbindlich anfragen</a>
+          <a class="button primary" href="#kontakt">Unverbindlich anfragen</a>
           <a class="text-link" href="#leistungen">Leistungen ansehen</a>
         </div>
       </div>
@@ -90,10 +90,27 @@
       <p>
         Schreib mir kurz, worum es geht. Dann schauen wir, ob ich dich sinnvoll unterstützen kann.
       </p>
-      <div class="contact-links">
-        <a class="button primary" href="mailto:nicholas.luc@icloud.com?subject=Anfrage%20Backoffice-Unterst%C3%BCtzung">nicholas.luc@icloud.com</a>
-        <a class="button secondary" href="tel:+4917621499010">0176 214 990 10</a>
-      </div>
+      <form class="contact-form" action="https://formspree.io/f/xwlkbzqd" method="POST">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">E-Mail</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="message">Nachricht</label>
+          <textarea id="message" name="message" rows="7" required></textarea>
+        </div>
+        <label class="form-consent">
+          <input type="checkbox" name="datenschutz_bestaetigt" value="ja" required>
+          <span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Angaben zur Bearbeitung meiner Anfrage zu.</span>
+        </label>
+        <button class="button primary form-submit" type="submit">Nachricht senden</button>
+      </form>
       <p class="small">Flexibel · zuverlässig · remote</p>
     </section>
   </main>
