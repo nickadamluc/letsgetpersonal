@@ -9,7 +9,23 @@
   <meta property="og:title" content="LET'S GET PERSONAL.">
   <meta property="og:description" content="Virtuelle Backoffice-Unterstützung für Selbstständige und kleine Unternehmen.">
   <meta property="og:type" content="website">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=3">
+  <style>
+    /* Critical contact-form layout: kept here as a cache-safe fallback. */
+    .contact-form{width:100%;max-width:680px;margin-top:34px}
+    .contact-form .form-field{display:flex;flex-direction:column;gap:8px;margin:0 0 20px}
+    .contact-form .form-field label{display:block;font-weight:700;font-size:.92rem}
+    .contact-form .form-field input,
+    .contact-form .form-field textarea{display:block;width:100%;max-width:100%;margin:0;padding:13px 14px;border:1px solid var(--line);border-radius:2px;background:#fff;color:var(--text);font:inherit}
+    .contact-form .form-field textarea{min-height:150px;resize:vertical}
+    .contact-form .form-consent{display:flex;align-items:flex-start;gap:10px;max-width:680px;margin:4px 0 22px}
+    .contact-form .form-consent input{flex:0 0 auto;margin-top:5px}
+    @media (max-width:620px){
+      .contact-form{max-width:none}
+      .contact-form .form-field input,.contact-form .form-field textarea{font-size:16px}
+      .contact-form .form-submit{width:100%}
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
